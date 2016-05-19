@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">The Solar System</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_planet_data">Planet Data</string>
+
+
+    <string-array name="planet_data">
+
+        <item>The Sun is our nearest star. The Sun provides us with light and heat. The Sun gives life to the Earth and the Earth would have no life at all without the energy it receives from the Sun. Without the Sun there would be no daylight, and our planet would simply be a dark, frozen world, with no oceans of liquid water and no life.\n\n
+
+From Earth, the Sun looks like it moves across the sky in the daytime and appears to disappear at night. This is because the Earth is spinning towards the east.\n\n
+
+This huge ball of superhot gas is 1.4 million kilometers across, equal to 109 Earths set side by side. It weighs as much as 330 000 Earths. About 1 300 000 Earths would fit inside the Sun!\n\n
+
+Everything in the Solar System orbits or revolves around the Sun. The Sun contains around 98% of all the material in the Solar System. The larger an object is, the more gravity it has.\n\n
+Because the Sun is so large, its powerful gravity attracts all the other objects in the Solar System towards it. At the same time, these objects, which are moving very rapidly, try to fly away from the Sun, outward into the emptiness of outer space.\n\n
+
+ The result of the planets trying to fly away, at the same time that the Sun is trying to pull them inward is that they become trapped halfway in between. Balanced between flying towards the Sun, and escaping into space, they spend eternity orbiting around their parent star.\n\n
+
+
+        </item>
+        <item>Mercury is the smallest and fastest planet in the solar system. It is also the closest planet to the sun. It is named after the Roman messenger god Mercury, the fastest Roman god. The planet Mercury was known by ancient people thousands of years ago. It has no moons.\n\n
+        Mercury is the smallest of the eight planets in our solar system. It is only a little bigger than Earth\'s moon. It would take more than 18 Mercurys to be as big as Earth.\n\n
+        Mercury is the closest planet to the sun. On average, it is a little more than one-third the distance from the sun than Earth is. Mercury orbits the sun once every 88 Earth days. So one year on Mercury is 88 Earth days. But a day on Mercury is longer than an Earth day. One Mercury day lasts for 59 Earth days.\n\n
+        The surface of Mercury looks much like Earth\'s moon. It has a lot of impact craters. Mercury has almost no atmosphere. Because it is so close to the sun, it can be very hot. On its sunny side, Mercury can reach a scorching 800 degrees Fahrenheit! (But Mercury is not the hottest planet in the solar system. The hottest planet is Venus.) \n\n
+        </item>
+        <item>
+        Venus was named after the Roman goddess of love and beauty. \nVenus has many, many
+        volcanoes. We do not know for sure, but it is possible that Venus has more volcanoes than
+        any of the other planets in our Solar System.\n Aside from the fact that Venus rotates very slowly so that a day on Venus lasts more than 100 Earth days, Venus also rotates in the opposite direction as almost all the other planets.
+Instead of the Sun rising in the east and setting in the west,
+        the Sun on Venus would appear to rise in the west and set in the east.
+        </item>
+    <item>The Earth is the third planet from the Sun and comes between the planet Venus and the planet Mars. The Earth is the planet where we live. It is also different from every other planet in the Solar System in a number of ways. It is the only planet that has liquid water on its surface. Water is necessary to sustain life. Therefore, the Earth is the only planet in the solar system that has life.The Earth has such a wide diversity of life and intelligent beings.  This has only been possible because of the Earth\’s atmosphere which has protected the Earth and allowed life to flourish.
+The Earth is larger than Mercury, Venus and Mars, the so-called “inner” planets of the solar system (those planets between the Sun and the Asteroid Belt). The Earth also is the only inner planet to have one large satellite, the Moon.  Mars has two very tiny moons.  Mercury and Venus has none.\n\n
+The Earth takes 365 and one-fourth (¼)  days to complete its orbit round the Sun.  The Earth’s year is therefore 365 days long but the ¼ days are added up and every fourth year has one extra day, on the 29th of February.  This fourth year is called a Leap Year (366 days) and is always a year which can be divided exactly by 4 – 2000, 2004, 2008, 2012, 2016.\n\n
+As the Earth orbits round the Sun it turns on its axis, rotating right round in 24 hours.  The side of the Earth that faces the Sun has daytime and the side of the Earth that is turned away from the Sun has night-time. \n\n
+As the Earth orbits round the Sun it tilts very slightly and so gives us the seasons.  When the Earth has tilted so that the northern half of the Earth is a little away from the Sun, the northern hemisphere (meaning half of the Earth\’s sphere) has winter. While it is winter in England, it is Summer in Australia, and vice versa. \n\n
+The Earth is fragile.  Its surface is split into plates (tectonic plates) which float on a rocky mantle – the layer between the surface of the earth, its crust, and its hot liquid core.  The inside of the Earth is active, with earthquakes, volcanoes and mountain building takes place along the boundaries of the tectonic plates. \n\n
+As a result of the Earth\’s geological activity (the volcanoes and earthquakes) the surface of the Earth has far fewer craters than the surface of planets such as Mars, Venus and Mercury or the surface of the Moon.  The craters have sunk down or been worn away by wind and rain over millions of years.  \n\n</item>
+    <item>Mars is the fourth planet from the sun and the next planet beyond Earth. Mars is about one-sixth the size of Earth. Mars is known as the Red Planet. It gets its red color from the iron oxide (like rust) in its soil.\n\n
+Mars is named for the ancient Roman god of war. The Greeks called the planet Ares, after their own god of war. The Romans and Greeks both associated the planet with war because its color resembles the color of blood.\n\n
+Mars has two small moons. Their names are Phobos and Deimos. They are named for the sons of Ares. Phobos means “fear,” and Deimos means “flight.”\n\n
+Mar\’s surface is rocky, with canyons, volcanoes, dry lake beds and craters all over it. Red dust covers most of its surface. Mars has clouds and wind just like Earth. Sometimes the wind blows the red dust into a dust storm. Tiny dust storms can look like tornados and large ones can be seen from Earth. Mars’ large storms sometimes cover the whole planet!\n\n
+Mars has about one-third the gravity of Earth. A rock dropped on Mars would fall more slowly than a rock falls on Earth. A person who weighs 100 pounds on Earth would only weigh about 37 pounds on Mars because of the reduced gravity.\n\n
+Mars has an atmosphere that is much thinner than Earth\’s. The atmosphere of Mars contains more than 95 percent carbon dioxide and much less than 1 percent oxygen.\n\n
+</item>
+<item>The asteroid belt is a  ring-shaped gathering of items located between the orbits of the planets Mars and Jupiter. It has many irregularly shaped bodies. Some of these bodies are asteroids, which give the belt its name.\n\n
+About half the mass of the belt is contained in its four largest bodies: Ceres, a dwarf planet named after the Roman goddess of agriculture, Vesta, a minor planet named after the Roman goddess of the hearth,Pallas, a minor planet named after the Titan god of warcraft, and Hygiea, a minor planet named after the Greek goddess of health.\n\n
+The total mass of the asteroid belt is approximately 4% that of the Earth\’s Moon. It is suggested that the  matter from the asteroid belt could have become a planet when the solar system was forming; however, the great gravity from Jupiter disrupted the would-be planet’s formation and caused the matter to break apart, instead.\n\n </item>
+<item>Jupiter is the largest planet in the solar system. It is approximately 143,000 kilometers (about 89,000 miles) wide at its equator. Jupiter is so large that all of the other planets in the solar system could fit inside it. More than 1,000 Earths would fit inside Jupiter.\n
+\nJupiter is the fifth planet from the sun. When viewed from Earth, it is usually the second brightest planet in the sky, after Venus. The planet is named after Jupiter, the king of the Roman gods.\n
+\nJupiter is a giant gas planet. Jupiter is like a star in composition. If Jupiter had been about 80 times more massive, it would have become a star rather than a planet. Its atmosphere is made up of mostly hydrogen gas and helium gas, just like the sun. The surface of the planet is covered in thick red, brown, yellow and white clouds.\n
+\nOne of the most famous features of Jupiter is the Great Red Spot. It is a giant spinning storm, resembling a hurricane. At its widest point, the storm is about three-and-a-half times the diameter of Earth. Jupiter is a very windy planet. Winds on Jupiter can reach 400 mph!\n
+\nJupiter has three thin rings. These rings are made up mostly of tiny dust particles.\n
+\nJupiter rotates, or spins, faster than any other planet. One rotation equals one day. The day on Jupiter is only about 10 hours long. The planet orbit is elliptical, or oval-shaped. It takes 12 Earth years for Jupiter to make one revolution around the sun, so a year on Jupiter is equal to 12 years on Earth.\n
+\nJupiter has 62 known moons. The four largest moons are Io (eye-OH), Europa (yur-O-puh), Ganymede (GAN-i-meed) and Callisto (kuh-LIS-toe). These four moons were discovered by Italian astronomer Galileo Galileiin 1610.
+</item>
+    <item>Saturn is the sixth planet in the Solar system. Saturn is the last planet that can be seen without using a telescope or binoculars and the planet was known in the ancient world before telescopes were invented. The bright globe of Saturn is surrounded by rings. The rings, however, can only be seen using a telescope. Saturn\’s rings were first seen through a telescope by Galileo Galilei in 1610.\n\n
+Saturn has at least 18 moons. The largest of the moons, Titan, is the second largest in the Solar system, after Jupiter\’s moon, Ganymede.  \n\n
+Saturn is the second largest planet in the Solar System, after the giant Jupiter. Its mass is 95 times that of the Earth. \n\n
+Saturn takes 29½ years to make one complete orbit of the Sun. This means that a year on Saturn is 29.5 Earth years long! \n\n
+Like Jupiter, Saturn spins much faster on its axis than the Earth.  The Earth turns, or rotates, on its axis once every 24 hours, turning away from the Sun and back again to give us night and day.  Saturn, although so much bigger, completes a full rotation in just over 10 hours. This means that a full day/night cycle on Saturn is 10 hours long.</item>
+<item>Uranus is the seventh planet from the Sun. It was discovered by William Herschel in 1781. Uranus lies more than 2,800 million kilometers from the Sun. The planet moves quite slowly and has a long way to travel, so each orbit around the Sun lasts 84 Earth years.\n\n
+Uranus is a giant world, the third largest planet in our Solar System. Sixty-four Earths would fit inside it. Despite its size, it spins rapidly. A day on Uranus lasts only 17 hours 14 minutes.\n\n
+Uranus spins like a top knocked over on its side. This means that the Sun is sometimes directly overhead at the poles. Each pole has a summer and a winter lasting 21 years, making them the hottest and coldest places on the planet!\n\n
+The main gases in its thick atmosphere are hydrogen and helium, with a small amount of methane. (The methane scatters blue light, which is why Uranus appears blue). Uranus has 27 known moons. None of these are very big. The largest satellites are Oberon and Titania, which were named after characters in Shakespeare\’s play, A Midsummer Night\'s Dream. \n\n
+Uranus also has at least a dozen dark, dusty rings. At least one ring is created by meteorites crashing into a small satellite.\n\n
+</item>
+    <item>Neptune was discovered in 1846 by Johann Galle. Galle knew where to look because of calculations by French mathematician Urbain Le Verrier. Both Le Verrier and John Adams in England had realised that an unseen planet was pulling on Uranus, causing it to slow down or speed up.\n\n
+Neptune turned out to be almost an identical twin of Uranus. It is 57 times bigger than the Earth, but spins quite rapidly—one day lasts only 16 hours 7 minutes. Its average distance from the Sun is about 4,500 million kilometers, and one year on Neptune lasts for almost 165 Earth years!\n\n
+Like Uranus, Neptune has an atmosphere of hydrogen, helium and methane.
+Neptune has at least five dark, narrow rings (named after Galle, Le Verrier, Adams and others who worked to discover the planet).\n\n
+The planet has 13 known moons. By far the largest is Triton. Triton was named after the Greek sea god and son of the Greek god Poseidon (the equivalent of the Roman god Neptune).\n\n
+</item>
+    <item>Modern telescopes have been able to see hundreds of icy objects beyond the orbit of Neptune, in a region known as the Kuiper Belt. The objects are probably left over from the birth of the planets in our solar system. They were ejected to this remote outer region by interactions with the giant planets.\n\n
+
+The Kuiper Belt is named after Gerard Kuiper, a Dutch-born astronomer who suggested in 1951 that some comets may originate in this region. The first Kuiper Belt Object was discovered in 1992, proving that Kuiper’s theory was correct. \n\n
+
+Finding objects in the Kuiper Belt is difficult because they are very hard to see and move so slowly. It takes hundreds of years for these objects to complete one orbit around the Sun.\n\n
+
+Most of the objects are small, typically 10-50 kilometers across. Until recently, Pluto, a dwarf planet named after the Greek god of the underworld, was the largest member of the Kuiper Belt, though a number of other objects were almost as large.\n\n
+
+In 2005, an even bigger object then Pluto was found, Eris. \n\n
+
+When discovered, Eris. named after the Greek goddess of chaos, was found to be twice as far as Pluto (97 Sun-Earth distances) from the Sun. This made it the furthest object yet seen in the Solar System. Its orbit is also tilted by 44 degrees, so it travels well above and below the paths of the other planets. Eris has a moon, which was named Dysnomia after the daughter of Eris in Greek mythology. Dysnomia means “lawlessness.” \n\n</item>
+
+</string-array>
+
+    <string-array name="planet_answers">
+
+        <item>MERCURY</item>
+        <item>THE SUN</item>
+        <item>VENUS</item>
+        <item>EARTH</item>
+        <item>MARS</item>
+        <item>ASTEROID BELT</item>
+        <item>JUPITER</item>
+        <item>SATURN</item>
+        <item>URANUS</item>
+        <item>NEPTUNE</item>
+        <item>KUIPER BELT</item>
+        <item>NEPTUNE</item>
+        <item>URANUS</item>
+        <item>SATURN</item>
+        <item>MERCURY</item>
+        <item>JUPITER</item>
+        <item>JUPITER</item>
+
+
+    </string-array>
+
+
+    <string-array name="planet_questions">
+
+        <item>Which planet is closest to the Sun??</item>
+        <item>What is the name of the star that gives life to the Earth?</item>
+        <item>Which planet was named for Roman goddess of love and beauty?</item>
+        <item>Which planet is where we live?</item>
+        <item>Which planet is named after the Roman god of war?</item>
+        <item>What is the band of rocks between Mars and Jupiter called?</item>
+        <item>Which planet has an enormous storm that circles the planet?</item>
+        <item>Which planet has rings?</item>
+        <item>Which planet rotates on its side?</item>
+        <item>wWhich planet is eighth from the Sun?</item>
+        <item>Which area contains the "dwarf" planets?</item>
+        <item>Which planet was named for the Roman god of the seas?</item>
+        <item>Which planet was named for the Greek god of the sky?</item>
+        <item>Which planet was named for the Roman god of agriculture?</item>
+        <item>Which planet was named for the Roman god of merchants?</item>
+        <item>Which planet was named for the Roman god of merchants?</item>
+        <item>Which planet was named for the Roman king of the gods?</item>
+        <item>Which planet rotates faster than any other planet in the solar system??</item>
+
+
+    </string-array>
+
+
+    <string name="title_activity_quiz">Quiz</string>
+</resources>

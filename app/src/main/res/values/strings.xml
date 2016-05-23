@@ -26,11 +26,11 @@ Because the Sun is so large, its powerful gravity attracts all the other objects
         The surface of Mercury looks much like Earth\'s moon. It has a lot of impact craters. Mercury has almost no atmosphere. Because it is so close to the sun, it can be very hot. On its sunny side, Mercury can reach a scorching 800 degrees Fahrenheit! (But Mercury is not the hottest planet in the solar system. The hottest planet is Venus.) \n\n
         </item>
         <item>
-        Venus was named after the Roman goddess of love and beauty. \nVenus has many, many
-        volcanoes. We do not know for sure, but it is possible that Venus has more volcanoes than
-        any of the other planets in our Solar System.\n Aside from the fact that Venus rotates very slowly so that a day on Venus lasts more than 100 Earth days, Venus also rotates in the opposite direction as almost all the other planets.
-Instead of the Sun rising in the east and setting in the west,
-        the Sun on Venus would appear to rise in the west and set in the east.
+       Venus was named after the Roman goddess of love and beauty, and it is considered the
+            brightest planet in Earth\’s nighttime sky. This is because it is nearby, because it is blanketed in highly reflective clouds. \n\n
+Venus has many, many volcanoes. We do not know for sure, but it is possible that Venus has more volcanoes than any of the other planets in our Solar System.\n Aside from the fact that Venus rotates very slowly so that a day on Venus lasts more than 100 Earth days, Venus also rotates in the opposite direction as almost all the other planets.\n\n
+Instead of the Sun rising in the east and setting in the west, the Sun on Venus would appear to rise in the west and set in the east.\n\n
+
         </item>
     <item>The Earth is the third planet from the Sun and comes between the planet Venus and the planet Mars. The Earth is the planet where we live. It is also different from every other planet in the Solar System in a number of ways. It is the only planet that has liquid water on its surface. Water is necessary to sustain life. Therefore, the Earth is the only planet in the solar system that has life.The Earth has such a wide diversity of life and intelligent beings.  This has only been possible because of the Earth\’s atmosphere which has protected the Earth and allowed life to flourish.
 The Earth is larger than Mercury, Venus and Mars, the so-called “inner” planets of the solar system (those planets between the Sun and the Asteroid Belt). The Earth also is the only inner planet to have one large satellite, the Moon.  Mars has two very tiny moons.  Mercury and Venus has none.\n\n
@@ -89,7 +89,6 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
 </string-array>
 
     <string-array name="planet_answers">
-
         <item>MERCURY</item>
         <item>THE SUN</item>
         <item>VENUS</item>
@@ -107,13 +106,16 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>MERCURY</item>
         <item>JUPITER</item>
         <item>JUPITER</item>
-
-
+        <item>PLUTO</item>
+        <item>MARS</item>
+        <item>EARTH</item>
+        <item>MERCURY</item>
+        <item>VENUS</item>
+        <item>VENUS</item>
     </string-array>
 
 
     <string-array name="planet_questions">
-
         <item>Which planet is closest to the Sun??</item>
         <item>What is the name of the star that gives life to the Earth?</item>
         <item>Which planet was named for Roman goddess of love and beauty?</item>
@@ -124,16 +126,19 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>Which planet has rings?</item>
         <item>Which planet rotates on its side?</item>
         <item>wWhich planet is eighth from the Sun?</item>
-        <item>Which area contains the "dwarf" planets?</item>
+        <item>Which of these is an area that contains Pluto?</item>
         <item>Which planet was named for the Roman god of the seas?</item>
         <item>Which planet was named for the Greek god of the sky?</item>
         <item>Which planet was named for the Roman god of agriculture?</item>
         <item>Which planet was named for the Roman god of merchants?</item>
-        <item>Which planet was named for the Roman god of merchants?</item>
         <item>Which planet was named for the Roman king of the gods?</item>
         <item>Which planet rotates faster than any other planet in the solar system??</item>
-
-
+        <item>Which of these is considered a "dwarf" planet?</item>
+        <item>Which of these is nicknamed the "Red Planet"?</item>
+        <item>Which planet contains an atmosphere with oxygen?</item>
+        <item>Which planet orbits the Sun in only 88 Earth days?</item>
+        <item>Which planet has a day that lasts more than 100 Earth days?</item>
+        <item>Which planet is brightest in the Earth\'s nighttime sky?</item>
     </string-array>
 
 

@@ -21,11 +21,14 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
     public int locationOfCorrectAnswer = 0;
     String[] planet_questions;
     String[] planet_answers;
-    ArrayList<String> answers = new ArrayList<String>();
+    ArrayList<String> answers = new ArrayList<>();
+    ArrayList<Integer> questions_asked = new ArrayList<>();
     TextView questionText;
-    Button button0, button1, button2, button3;
+    public Button button0, button1, button2, button3, quizAgainButton, backPLDataButton;
     MediaPlayer mp1, mp2, mp3;
     int incorrectAnswerLocation;
+    TextView pointsText;
+    int points;
 
 
     @Override
@@ -42,6 +45,11 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
+        quizAgainButton = (Button) findViewById(R.id.quizAgainButton);
+        backPLDataButton = (Button) findViewById(R.id.backPlDataButton);
+        quizAgainButton.setVisibility(View.INVISIBLE);
+        backPLDataButton.setVisibility(View.INVISIBLE);
+        pointsText = (TextView) findViewById(R.id.pointsTextView);
 
         button0.setTag("0");
         button1.setTag("1");
@@ -62,12 +70,22 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
     public void createNewQuestion() {
 
+        //clear answers arraylist for new question
+
         answers.clear();
         Random random = new Random();
 
         try {
 
+            //roll random number under length of number of questions in planet questions arraylist
+
             chosenPlanetQ = random.nextInt(planet_questions.length);
+
+            //prevent same question being asked twice
+
+            while (questions_asked.contains(chosenPlanetQ)) {
+                chosenPlanetQ = random.nextInt(planet_questions.length);
+            }
 
             locationOfCorrectAnswer = random.nextInt(4);
 
@@ -75,6 +93,15 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
             for (int i = 0; i < 4; i++) {
 
                 if (i == locationOfCorrectAnswer) {
+
+                    //if points equal 20, prevent game from cycling newq question
+
+                    if (points >= 20) {
+                        questionText.setText("You won!\n Play again?");
+                    } else
+
+                    //set question text and add correct answer to answers array at random number
+                        // slot 0-3
 
                     questionText.setText(planet_questions[chosenPlanetQ]);
                     answers.add(i, planet_answers[chosenPlanetQ]);
@@ -91,7 +118,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
                     answers.add(i, planet_answers[incorrectAnswerLocation]);
 
-                    if (answers.contains(planet_answers[incorrectAnswerLocation].toString())) {
+                    if (answers.contains(planet_answers[incorrectAnswerLocation])) {
                         incorrectAnswerLocation = random.nextInt(chosenPlanetQ);
                         answers.add(i, planet_answers[incorrectAnswerLocation]);
 
@@ -100,15 +127,18 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
                 }
             }
 
-                button0.setText(answers.get(0));
-                button1.setText(answers.get(1));
-                button2.setText(answers.get(2));
-                button3.setText(answers.get(3));
+            button0.setText(answers.get(0));
+            button1.setText(answers.get(1));
+            button2.setText(answers.get(2));
+            button3.setText(answers.get(3));
+            questions_asked.add(chosenPlanetQ);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -116,12 +146,50 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
         if ((Integer.parseInt(tag)) == locationOfCorrectAnswer) {
             mp2.start();
-            createNewQuestion();
+            points++;
+            pointsText.setText(Integer.toString(points));
+
+            if (points == 20) {
+               endGame();
+            }
         } else {
             mp1.start();
         }
         createNewQuestion();
-
     }
+
+    public void endGame() {
+        button0.setVisibility(View.INVISIBLE);
+        button1.setVisibility(View.INVISIBLE);
+        button2.setVisibility(View.INVISIBLE);
+        button3.setVisibility(View.INVISIBLE);
+        backPLDataButton.setVisibility(View.VISIBLE);
+        pointsText.setVisibility(View.INVISIBLE);
+        backPLDataButton.setText("PLANET DATA");
+        quizAgainButton.setVisibility(View.VISIBLE);
+        quizAgainButton.setText("QUIZ ME AGAIN!");
+        questions_asked.clear();
+    }
+
+    public void quizAgain(View v) {
+        button0.setVisibility(View.VISIBLE);
+        button1.setVisibility(View.VISIBLE);
+        button2.setVisibility(View.VISIBLE);
+        button3.setVisibility(View.VISIBLE);
+        pointsText.setVisibility(View.VISIBLE);
+        points = 0;
+        pointsText.setText("0");
+        questionText.setText("");
+        backPLDataButton.setVisibility(View.INVISIBLE);
+        quizAgainButton.setVisibility(View.INVISIBLE);
+        createNewQuestion();
+    }
+
+    public void dataAgain(View v) {
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(i);
+    }
+
+
 
 }

@@ -14,6 +14,17 @@
     tools:showIn="@layout/activity_quiz"
     android:background="#010101">
 
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/pointsTextView"
+        android:layout_weight="0.21"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#fffefe"
+        android:textAlignment="center"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,6 +50,33 @@
                 android:layout_weight="0.18"
                 android:gravity="center_vertical|center_horizontal"
                 android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quizAgainButton"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:onClick="quizAgain"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/backPlDataButton"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:onClick="dataAgain"/>
+            </LinearLayout>
 
             <Button
                 android:layout_width="300dp"

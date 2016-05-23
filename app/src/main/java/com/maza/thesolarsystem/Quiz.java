@@ -29,6 +29,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
     int incorrectAnswerLocation;
     TextView pointsText;
     int points;
+    String correctAnsString, incorrectAns;
 
 
     @Override
@@ -70,70 +71,56 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
     public void createNewQuestion() {
 
-        //clear answers arraylist for new question
-
         answers.clear();
         Random random = new Random();
 
         try {
 
-            //roll random number under length of number of questions in planet questions arraylist
+            if (points == 20) {
+                questionText.setText("You win!\n Play again?");
+            } else {
 
-            chosenPlanetQ = random.nextInt(planet_questions.length);
-
-            //prevent same question being asked twice
-
-            while (questions_asked.contains(chosenPlanetQ)) {
                 chosenPlanetQ = random.nextInt(planet_questions.length);
-            }
 
-            locationOfCorrectAnswer = random.nextInt(4);
+                locationOfCorrectAnswer = random.nextInt(4);
 
 
-            for (int i = 0; i < 4; i++) {
+                for (int i = 0; i < 4; i++) {
 
-                if (i == locationOfCorrectAnswer) {
+                    if (i == locationOfCorrectAnswer) {
 
-                    //if points equal 20, prevent game from cycling newq question
 
-                    if (points >= 20) {
-                        questionText.setText("You won!\n Play again?");
-                    } else
+                        questionText.setText(planet_questions[chosenPlanetQ]);
+                        answers.add(i, planet_answers[chosenPlanetQ]);
+                        String correctAnsString = planet_answers[chosenPlanetQ];
+                        Log.i("Correct Answer", correctAnsString);
 
-                    //set question text and add correct answer to answers array at random number
-                        // slot 0-3
+                    } else {
 
-                    questionText.setText(planet_questions[chosenPlanetQ]);
-                    answers.add(i, planet_answers[chosenPlanetQ]);
+                        incorrectAnswerLocation = random.nextInt(planet_questions.length);
+                        incorrectAns = planet_answers[incorrectAnswerLocation];
+                        Log.i("Incorrect Answer", incorrectAns);
 
-                } else {
+                        while (incorrectAnswerLocation == chosenPlanetQ ||
+                                correctAnsString == incorrectAns) {
+                            incorrectAnswerLocation = random.nextInt(planet_questions.length);
+                        }
 
-                    incorrectAnswerLocation = random.nextInt(chosenPlanetQ);
-
-                    while (incorrectAnswerLocation == chosenPlanetQ) {
-
-                        incorrectAnswerLocation = random.nextInt(chosenPlanetQ);
-
-                    }
-
-                    answers.add(i, planet_answers[incorrectAnswerLocation]);
-
-                    if (answers.contains(planet_answers[incorrectAnswerLocation])) {
-                        incorrectAnswerLocation = random.nextInt(chosenPlanetQ);
                         answers.add(i, planet_answers[incorrectAnswerLocation]);
+                        Log.i("annswers arraylist", answers.get(i));
 
                     }
-
                 }
+
+
+                button0.setText(answers.get(0));
+                button1.setText(answers.get(1));
+                button2.setText(answers.get(2));
+                button3.setText(answers.get(3));
+
             }
-
-            button0.setText(answers.get(0));
-            button1.setText(answers.get(1));
-            button2.setText(answers.get(2));
-            button3.setText(answers.get(3));
-            questions_asked.add(chosenPlanetQ);
-
-        } catch (Exception e) {
+        }
+            catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -144,19 +131,20 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         String tag = v.getTag().toString();
 
-        if ((Integer.parseInt(tag)) == locationOfCorrectAnswer) {
-            mp2.start();
-            points++;
-            pointsText.setText(Integer.toString(points));
 
-            if (points == 20) {
-               endGame();
+            if ((Integer.parseInt(tag)) == locationOfCorrectAnswer) {
+                mp2.start();
+                points++;
+                pointsText.setText(Integer.toString(points));
+
+                if (points == 20) {
+                    endGame();
+                }
+            } else {
+                mp1.start();
             }
-        } else {
-            mp1.start();
+            createNewQuestion();
         }
-        createNewQuestion();
-    }
 
     public void endGame() {
         button0.setVisibility(View.INVISIBLE);

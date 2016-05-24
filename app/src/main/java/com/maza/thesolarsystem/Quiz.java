@@ -32,6 +32,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
     String correctAnsString, incorrectAns;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,45 +81,43 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
                 questionText.setText("You win!\n Play again?");
             } else {
 
-                chosenPlanetQ = random.nextInt(planet_questions.length);
+                //random number to choose correct answer from planey_answers array
+                //random number to select where in answers arraylist the correct answer will go
 
+                chosenPlanetQ = random.nextInt(planet_questions.length);
                 locationOfCorrectAnswer = random.nextInt(4);
+
+                correctAnsString = planet_answers[chosenPlanetQ].toString();
 
 
                 for (int i = 0; i < 4; i++) {
 
                     if (i == locationOfCorrectAnswer) {
 
-
                         questionText.setText(planet_questions[chosenPlanetQ]);
-                        answers.add(i, planet_answers[chosenPlanetQ]);
-                        String correctAnsString = planet_answers[chosenPlanetQ];
+                        answers.add(i, correctAnsString);
                         Log.i("Correct Answer", correctAnsString);
 
                     } else {
+                        incorrectAnswerLocation = random.nextInt(planet_answers.length);
+                        incorrectAns = planet_answers[incorrectAnswerLocation].toString();
 
-                        incorrectAnswerLocation = random.nextInt(planet_questions.length);
-                        incorrectAns = planet_answers[incorrectAnswerLocation];
-                        Log.i("Incorrect Answer", incorrectAns);
-
-                        while (incorrectAnswerLocation == chosenPlanetQ ||
-                                correctAnsString == incorrectAns) {
-                            incorrectAnswerLocation = random.nextInt(planet_questions.length);
+                        while (correctAnsString.equals(incorrectAns)) {
+                            incorrectAnswerLocation = random.nextInt(planet_answers.length);
+                            incorrectAns = planet_answers[incorrectAnswerLocation].toString();
                         }
-
-                        answers.add(i, planet_answers[incorrectAnswerLocation]);
+                        answers.add(i, incorrectAns);
                         Log.i("annswers arraylist", answers.get(i));
 
                     }
                 }
 
+                    button0.setText(answers.get(0));
+                    button1.setText(answers.get(1));
+                    button2.setText(answers.get(2));
+                    button3.setText(answers.get(3));
 
-                button0.setText(answers.get(0));
-                button1.setText(answers.get(1));
-                button2.setText(answers.get(2));
-                button3.setText(answers.get(3));
-
-            }
+                }
         }
             catch (Exception e) {
             e.printStackTrace();

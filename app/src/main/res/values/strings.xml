@@ -96,7 +96,6 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>MARS</item>
         <item>ASTEROID BELT</item>
         <item>JUPITER</item>
-        <item>SATURN</item>
         <item>URANUS</item>
         <item>NEPTUNE</item>
         <item>KUIPER BELT</item>
@@ -112,6 +111,14 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>MERCURY</item>
         <item>VENUS</item>
         <item>VENUS</item>
+        <item>EARTH</item>
+        <item>JUPITER</item>
+        <item>MARS</item>
+        <item>JUPITER</item>
+        <item>SATURN</item>
+        <item>URANUS</item>
+        <item>URANUS</item>
+        <item>NEPTUNE</item>
     </string-array>
 
 
@@ -123,22 +130,31 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>Which planet is named after the Roman god of war?</item>
         <item>What is the band of rocks between Mars and Jupiter called?</item>
         <item>Which planet has an enormous storm that circles the planet?</item>
-        <item>Which planet has rings?</item>
         <item>Which planet rotates on its side?</item>
-        <item>wWhich planet is eighth from the Sun?</item>
+        <item>Which planet is eighth from the Sun?</item>
         <item>Which of these is an area that contains Pluto?</item>
         <item>Which planet was named for the Roman god of the seas?</item>
         <item>Which planet was named for the Greek god of the sky?</item>
         <item>Which planet was named for the Roman god of agriculture?</item>
         <item>Which planet was named for the Roman god of merchants?</item>
         <item>Which planet was named for the Roman king of the gods?</item>
-        <item>Which planet rotates faster than any other planet in the solar system??</item>
+        <item>Which planet rotates faster than any other planet in the solar system?</item>
         <item>Which of these is considered a "dwarf" planet?</item>
         <item>Which of these is nicknamed the "Red Planet"?</item>
         <item>Which planet contains an atmosphere with oxygen?</item>
         <item>Which planet orbits the Sun in only 88 Earth days?</item>
         <item>Which planet has a day that lasts more than 100 Earth days?</item>
         <item>Which planet is brightest in the Earth\'s nighttime sky?</item>
+        <item>Which planet takes 365 days to orbit the sun?</item>
+        <item>Which planet is fifth from the sun?</item>
+        <item>which planet has a moon whose name means "fear"?</item>
+        <item>Which of these is the largest planet in the solar system?</item>
+        <item>which planet has a year that is 29.5 Earth
+            years long, but a day that is only 10 hours?</item>
+        <item>Which planet has moons named after characters in Shakespeare\’s play, A
+        Midsummer Night\'s Dream?</item>
+        <item>Which planet is  the third largest planet in our solar system?</item>
+        <item>Which planet has a moon named Triton?</item>
     </string-array>
 
 

@@ -87,8 +87,12 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
                 chosenPlanetQ = random.nextInt(planet_questions.length);
                 locationOfCorrectAnswer = random.nextInt(4);
 
-                correctAnsString = planet_answers[chosenPlanetQ].toString();
+                //prevent same question being asked twice
 
+                 while (questions_asked.contains(chosenPlanetQ)) {
+                    chosenPlanetQ = random.nextInt(planet_questions.length);
+                  }
+                correctAnsString = planet_answers[chosenPlanetQ].toString();
 
                 for (int i = 0; i < 4; i++) {
 
@@ -117,6 +121,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
                     button1.setText(answers.get(1));
                     button2.setText(answers.get(2));
                     button3.setText(answers.get(3));
+                    questions_asked.add(chosenPlanetQ);
 
                 }
         }

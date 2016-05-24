@@ -102,7 +102,8 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
                         incorrectAnswerLocation = random.nextInt(planet_answers.length);
                         incorrectAns = planet_answers[incorrectAnswerLocation].toString();
 
-                        while (correctAnsString.equals(incorrectAns)) {
+                        while ((correctAnsString.equals(incorrectAns)) ||
+                                (answers.contains(incorrectAns))) {
                             incorrectAnswerLocation = random.nextInt(planet_answers.length);
                             incorrectAns = planet_answers[incorrectAnswerLocation].toString();
                         }

@@ -19,7 +19,6 @@ import com.maza.thesolarsystem.R;
 public class PlanetDataActivity extends AppCompatActivity {
 
     TextView plData;
-    ImageView plImage;
     String buttonTag;
     Button nextPlButton;
     String[] planet_data;
@@ -32,14 +31,12 @@ public class PlanetDataActivity extends AppCompatActivity {
 
         plData = (TextView) findViewById(R.id.plData);
         plData.setMovementMethod(new ScrollingMovementMethod());
-        plImage = (ImageView) findViewById(R.id.plImage);
         nextPlButton = (Button) findViewById(R.id.nextPlButton);
 
         planet_data = getResources().getStringArray(R.array.planet_data);
 
         Intent i = getIntent();
         buttonTag = i.getStringExtra("button name");
-        Toast.makeText(PlanetDataActivity.this, buttonTag + "", Toast.LENGTH_SHORT).show();
 
         displayPlanet();
 

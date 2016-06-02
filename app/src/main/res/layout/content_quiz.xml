@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.maza.thesolarsystem.Quiz"
     tools:showIn="@layout/activity_quiz"
-    android:background="#040404">
+    android:background="@drawable/starsbackground">
 
     <TextView
         android:layout_width="75dp"

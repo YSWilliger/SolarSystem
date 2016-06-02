@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".PlanetDataActivity"
     tools:showIn="@layout/activity_planet_data"
-    android:background="#040404">
+    android:background="@drawable/starsbackground">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -44,7 +44,7 @@
             <Button
                 android:layout_width="200dp"
                 android:layout_height="100dp"
-                android:text="Go To Quiz!"
+                android:text="Quiz Me!"
                 android:id="@+id/quizButton"
                 android:layout_weight="1"
                 android:onClick="gotoQuiz"

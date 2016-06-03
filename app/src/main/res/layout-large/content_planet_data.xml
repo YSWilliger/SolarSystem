@@ -25,21 +25,25 @@
             android:layout_height="wrap_content"
             android:id="@+id/plData"
             android:scrollIndicators="top"
-            android:maxLines = "15"
+            android:maxLines = "18"
             android:layout_gravity="center_horizontal"
             android:textColor="#fffdfd"
             android:textAlignment="center"
-            android:textSize="35sp"/>
+            android:textSize="37sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="75dp">
 
             <Button
-                android:layout_width="150dp"
+                android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text="Next Planet"
                 android:id="@+id/nextPlButton"
@@ -52,7 +56,7 @@
                 android:textStyle="bold"/>
 
             <Button
-                android:layout_width="150dp"
+                android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:text="Quiz Me!"
                 android:id="@+id/quizButton"

@@ -140,7 +140,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
             if ((Integer.parseInt(tag)) == locationOfCorrectAnswer) {
                 mp2.start();
                 points++;
-                pointsText.setText(Integer.toString(points));
+                pointsText.setText(Integer.toString(points) + "/20");
 
                 if (points == 20) {
                     endGame();

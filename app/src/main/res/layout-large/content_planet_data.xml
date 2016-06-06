@@ -27,7 +27,7 @@
             android:scrollIndicators="top"
             android:maxLines = "18"
             android:layout_gravity="center_horizontal"
-            android:textColor="#fffdfd"
+            android:textColor="#eafad4"
             android:textAlignment="center"
             android:textSize="37sp"
             android:layout_marginTop="80dp"
@@ -53,7 +53,8 @@
                 android:layout_marginBottom="30dp"
                 android:textAlignment="center"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="#8fc4c0"/>
 
             <Button
                 android:layout_width="100dp"
@@ -65,7 +66,8 @@
                 android:layout_gravity="bottom"
                 android:layout_marginBottom="30dp"
                 android:textStyle="bold"
-                android:textSize="30sp"/>
+                android:textSize="30sp"
+                android:background="#8fc4c0"/>
         </LinearLayout>
     </LinearLayout>
 

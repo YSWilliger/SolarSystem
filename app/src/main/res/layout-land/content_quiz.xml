@@ -15,7 +15,7 @@
     android:background="@drawable/starsbackground">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:gravity="center_vertical">
@@ -23,7 +23,9 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp">
 
             <TextView
                 android:layout_width="75dp"
@@ -32,55 +34,75 @@
                 android:id="@+id/pointsTextView"
                 android:layout_weight="0.21"
                 android:textStyle="bold"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textColor="#eafad4"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:text="0/20"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/questionText"
                 android:textAlignment="center"
                 android:textStyle="bold|italic"
-                android:textSize="20sp"
+                android:textSize="23sp"
                 android:textColor="#eafad4"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="0.18"
+                android:layout_marginBottom="100dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:layout_gravity="center_horizontal"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/quizAgainButton"
-                android:gravity="center_horizontal"
-                android:layout_marginRight="10dp"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:onClick="quizAgain"
-                android:layout_gravity="bottom"
-                android:layout_weight="0.18"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/backPlDataButton"
-                android:gravity="center_horizontal"
-                android:layout_marginLeft="10dp"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:onClick="dataAgain"
-                android:layout_gravity="bottom"
-                android:layout_weight="0.18"/>
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".18"/>
 
         </LinearLayout>
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:padding="30dp"
+        android:gravity="center_vertical|end">
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/quizAgainButton"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:onClick="quizAgain"
+            android:layout_gravity="center_horizontal"
+            android:background="#8fc4c0"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backPlDataButton"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:onClick="dataAgain"
+            android:layout_gravity="center_horizontal"
+            android:background="#8fc4c0"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_gravity="center_vertical"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:padding="30dp"
+            android:gravity="center_vertical|end">
 
             <Button
                 android:layout_width="200dp"
@@ -90,12 +112,13 @@
                 android:tag="0"
                 android:text=""
                 android:id="@+id/button0"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textColor="@color/material_grey_850"
                 android:gravity="center|center_vertical|center_horizontal"
                 android:background="#8fc4c0"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="20dp"/>
 
         <Button
             android:layout_width="200dp"
@@ -105,13 +128,14 @@
             android:tag="1"
             android:text=""
             android:id="@+id/button1"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:textAlignment="center"
             android:textColor="@color/material_grey_850"
             android:gravity="center|center_vertical|center_horizontal"
             android:background="#8fc4c0"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="20dp"/>
 
         <Button
             android:layout_width="200dp"
@@ -121,13 +145,14 @@
             android:tag="2"
             android:text=""
             android:id="@+id/button2"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:textAlignment="center"
             android:textColor="@color/material_grey_850"
             android:gravity="center|center_vertical|center_horizontal"
             android:background="#8fc4c0"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="20dp"/>
 
         <Button
             android:layout_width="200dp"
@@ -137,13 +162,14 @@
             android:tag="3"
             android:text=""
             android:id="@+id/button3"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:textAlignment="center"
             android:textColor="@color/material_grey_850"
             android:gravity="center|center_vertical|center_horizontal"
             android:background="#8fc4c0"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="20dp"/>
 
         </LinearLayout>
 

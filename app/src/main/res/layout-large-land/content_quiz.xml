@@ -21,9 +21,10 @@
         android:id="@+id/pointsTextView"
         android:layout_weight="0.21"
         android:textStyle="bold"
-        android:textSize="25sp"
-        android:textColor="#fffefe"
-        android:textAlignment="center"/>
+        android:textSize="40sp"
+        android:textColor="#eafad4"
+        android:textAlignment="center"
+        android:text="0/20"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,21 +40,22 @@
             android:textAlignment="center">
 
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="600dp"
                 android:layout_height="match_parent"
                 android:id="@+id/questionText"
                 android:textAlignment="center"
                 android:textStyle="bold|italic"
-                android:textSize="35sp"
-                android:textColor="#fffdfd"
-                android:layout_marginBottom="15dp"
+                android:textSize="42sp"
+                android:textColor="#eafad4"
+                android:layout_marginBottom="25dp"
                 android:layout_gravity="center"/>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal">
 
                 <Button
                     android:layout_width="wrap_content"
@@ -61,9 +63,11 @@
                     android:id="@+id/quizAgainButton"
                     android:gravity="center_horizontal"
                     android:layout_marginRight="10dp"
-                    android:textSize="15sp"
+                    android:textSize="35sp"
                     android:textStyle="bold"
-                    android:onClick="quizAgain"/>
+                    android:onClick="quizAgain"
+                    android:background="#8fc4c0"
+                    android:padding="20dp"/>
 
                 <Button
                     android:layout_width="wrap_content"
@@ -71,62 +75,76 @@
                     android:id="@+id/backPlDataButton"
                     android:gravity="center_horizontal"
                     android:layout_marginLeft="10dp"
-                    android:textSize="15sp"
+                    android:textSize="35sp"
                     android:textStyle="bold"
-                    android:onClick="dataAgain"/>
+                    android:onClick="dataAgain"
+                    android:background="#8fc4c0"
+                    android:padding="20dp"/>
             </LinearLayout>
 
             <Button
-                android:layout_width="fill_parent"
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
                 android:layout_column="0"
                 android:tag="0"
                 android:text=""
                 android:id="@+id/button0"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"/>
+                android:textSize="35sp"
+                android:layout_marginTop="15dp"
+                android:background="#8fc4c0"
+                android:padding="15dp"/>
 
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="0"
                 android:tag="1"
                 android:text=""
                 android:id="@+id/button1"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"/>
+                android:textSize="35sp"
+                android:layout_marginTop="15dp"
+                android:background="#8fc4c0"
+                android:padding="15dp"/>
 
             <Button
-                android:layout_width="fill_parent"
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_row="3"
                 android:layout_column="0"
                 android:tag="2"
                 android:text=""
                 android:id="@+id/button2"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"/>
+                android:textSize="35sp"
+                android:layout_marginTop="15dp"
+                android:background="#8fc4c0"
+                android:padding="15dp"/>
 
             <Button
-                android:layout_width="fill_parent"
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_row="4"
                 android:layout_column="0"
                 android:tag="3"
                 android:text=""
                 android:id="@+id/button3"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"/>
+                android:textSize="35sp"
+                android:layout_marginTop="15dp"
+                android:background="#8fc4c0"
+                android:padding="15dp"/>
 
         </LinearLayout>
 

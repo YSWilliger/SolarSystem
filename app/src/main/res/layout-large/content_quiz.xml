@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.maza.thesolarsystem.Quiz"
     tools:showIn="@layout/activity_quiz"
-    android:background="#010101">
+    android:background="@drawable/starsbackground">
 
     <TextView
         android:layout_width="150dp"
@@ -21,9 +21,11 @@
         android:id="@+id/pointsTextView"
         android:layout_weight="0.21"
         android:textStyle="bold"
-        android:textSize="25sp"
-        android:textColor="#fffefe"
-        android:textAlignment="center"/>
+        android:textSize="35sp"
+        android:textColor="#eafad4"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="0/20"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,17 +41,18 @@
             android:gravity="center_vertical|center_horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="500dp"
                 android:layout_height="match_parent"
                 android:id="@+id/questionText"
                 android:textAlignment="center"
                 android:textStyle="bold|italic"
-                android:textSize="35sp"
-                android:textColor="#fffdfd"
-                android:layout_marginBottom="15dp"
+                android:textSize="40sp"
+                android:textColor="#eafad4"
+                android:layout_marginBottom="30dp"
                 android:layout_weight="0.18"
                 android:gravity="center_vertical|center_horizontal"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:textIsSelectable="false"/>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -63,9 +66,11 @@
                     android:id="@+id/quizAgainButton"
                     android:gravity="center_horizontal"
                     android:layout_marginRight="10dp"
-                    android:textSize="15sp"
+                    android:textSize="35sp"
                     android:textStyle="bold"
-                    android:onClick="quizAgain"/>
+                    android:onClick="quizAgain"
+                    android:background="#8fc4c0"
+                    android:padding="20dp"/>
 
                 <Button
                     android:layout_width="wrap_content"
@@ -73,9 +78,11 @@
                     android:id="@+id/backPlDataButton"
                     android:gravity="center_horizontal"
                     android:layout_marginLeft="10dp"
-                    android:textSize="15sp"
+                    android:textSize="35sp"
                     android:textStyle="bold"
-                    android:onClick="dataAgain"/>
+                    android:onClick="dataAgain"
+                    android:background="#8fc4c0"
+                    android:padding="20dp"/>
             </LinearLayout>
 
             <Button
@@ -91,7 +98,9 @@
                 android:textColor="@color/material_grey_850"
                 android:gravity="center|center_vertical|center_horizontal"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="#8fc4c0"
+                android:layout_marginTop="10dp"/>
 
             <Button
                 android:layout_width="300dp"
@@ -106,7 +115,9 @@
                 android:textColor="@color/material_grey_850"
                 android:gravity="center|center_vertical|center_horizontal"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="#8fc4c0"
+                android:layout_marginTop="10dp"/>
 
             <Button
                 android:layout_width="300dp"
@@ -121,7 +132,9 @@
                 android:textColor="@color/material_grey_850"
                 android:gravity="center|center_vertical|center_horizontal"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="#8fc4c0"
+                android:layout_marginTop="10dp"/>
 
             <Button
                 android:layout_width="300dp"
@@ -136,7 +149,9 @@
                 android:textColor="@color/material_grey_850"
                 android:gravity="center|center_vertical|center_horizontal"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="#8fc4c0"
+                android:layout_marginTop="10dp"/>
 
         </LinearLayout>
 

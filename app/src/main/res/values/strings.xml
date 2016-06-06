@@ -144,7 +144,6 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>JUPITER</item>
         <item>SATURN</item>
         <item>URANUS</item>
-        <item>URANUS</item>
         <item>NEPTUNE</item>
         <item>THE SUN</item>
         <item>MERCURY</item>
@@ -153,11 +152,12 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>JUPITER</item>
         <item>JUPITER</item>
         <item>JUPITER</item>
+        <item>KUIPER BELT</item>
     </string-array>
 
 
     <string-array name="planet_questions">
-        <item>Which planet is closest to the Sun??</item>
+        <item>Which planet is closest to the Sun?</item>
         <item>What is the name of the star that gives life to the Earth?</item>
         <item>Which planet was named for Roman goddess of love and beauty?</item>
         <item>Which planet is where we live?</item>
@@ -181,21 +181,20 @@ When discovered, Eris. named after the Greek goddess of chaos, was found to be t
         <item>Which planet is brightest in the Earth\'s nighttime sky?</item>
         <item>Which planet takes 365 days to orbit the sun?</item>
         <item>Which planet is fifth from the sun?</item>
-        <item>which planet has a moon whose name means "fear"?</item>
+        <item>Which planet has a moon whose name means "fear"?</item>
         <item>Which of these is the largest planet in the solar system?</item>
-        <item>which planet has a year that is 29.5 Earth
+        <item>Which planet has a year that is 29.5 Earth
             years long, but a day that is only 10 hours?</item>
-        <item>Which planet has moons named after characters in Shakespeare\’s play, A
-        Midsummer Night\'s Dream?</item>
         <item>Which planet is  the third largest planet in our solar system?</item>
         <item>Which planet has a moon named Triton?</item>
-        <item>Everything in the Solar System orbits or revolves around which of these?</item>
-        <item>Which planet is smallest in the Solar System?</item>
+        <item>Everything in the Solar System orbits around which of these?</item>
+        <item>Which is the smallest (non-dwarf) planet in the Solar System?</item>
         <item>Which of the inner planets has the fewest visible impact craters?</item>
         <item>Which planet is typically the second-brightest in the Earth\'s night sky?</item>
         <item>Which planet is so large that all of the other planets could fit inside it?</item>
         <item>Which planet is home to the Great Red Spot?</item>
         <item>Which planet has the shortest day?</item>
+        <item>Which of these is an icy region beyond Neptune?</item>
     </string-array>
 
     .

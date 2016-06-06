@@ -38,7 +38,8 @@
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="#8fc4c0"/>
 
             <Button
                 android:layout_width="125dp"
@@ -49,7 +50,8 @@
                 android:onClick="gotoQuiz"
                 android:layout_gravity="center"
                 android:textStyle="bold"
-                android:textSize="18dp"/>
+                android:textSize="18dp"
+                android:background="#8fc4c0"/>
 
         </LinearLayout>
 
